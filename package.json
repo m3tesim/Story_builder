@@ -1,0 +1,20 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "Story builder application ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epfl-extension-school/project-tcc-c1-s18-6555-3743.git"
+  },
+ 
+  "author": "Moatasem shaltout",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epfl-extension-school/project-tcc-c1-s18-6555-3743/issues"
+  },
+  "homepage": "https://github.com/epfl-extension-school/project-tcc-c1-s18-6555-3743#readme"
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="static/cs/styles.css" />
+    <script src="/static/js/login.js" defer></script>
+    <title>Story Builder:Create New User</title>
+  </head>
+  <body>
+    <header>
+      <h1>Story builder</h1>
+      <h2>An Online story builder Game :)</h2>
+      <p id="current-user">user</p>
+      <p>
+        <a href="how-it-works">how it works?!</a>
+      </p>
+    </header>
+    <main class="container">
+      <h3 class="title">Choose A user</h3>
+      <div class="gey-box">
+        <input
+          class="search-input"
+          type="text"
+          id="search"
+          placeholder="search by name"
+          onkeyup="search_users()"
+        />
+      </div>
+      <form id="login-form" action="/dashboard"  onsubmit="return login()" novalidate>
+        <div class="users-container">$$users$$</div>
+        <div>
+          <p id="validation"  class="validation"> Please Choose user</p>
+          <button class="primary-btn" type="submit" id="login-btn">
+            Login
+          </button>
+
+          <a class="primary-link" href="/new-user"> Create New User</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

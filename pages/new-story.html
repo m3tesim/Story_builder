@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="static/cs/styles.css" />
+    <script src="/static/js/index.js" defer></script>
+    <script src="/static/js/newStory.js" defer></script>
+
+    <title>Story Builder:Create New User</title>
+  </head>
+  <body>
+    <header>
+      <h1>Story builder App</h1>
+      <p id="current-user">user</p>
+
+    </header>
+
+    <main class="container form-cantainer">
+      <h2 class="title">Create a new story</h2>
+      <form
+        class="primary-form"
+        action="/new-story"
+        method="POST"
+        onsubmit="return validation()"
+      >
+        <div class="form-info">
+          <div class="flex">
+            <p>Max character 40  </p>
+            <p id='feedBack'></p>
+                    </div>
+          
+
+          <h3 class="title" for="name">Story Name</h3>
+
+          <input
+            id="story-input"
+            class="text-input"
+            type="text"
+            placeholder="make it descriptive"
+            name="name"
+            maxlength="40"
+            required
+          />
+          <p id="validation" class="validation">Not valid input</p>
+          <p id="feedback"  ></p>
+        </div>
+        <div class="form-buttons">
+          <input
+            id="submit"
+            class="btn primary-btn"
+            type="submit"
+            value="Done"
+          />
+          <a class="secondary-btn" onclick="authorised()" href="/dashboard">cancle</a>
+        </div>
+      </form>
+    </main>
+
+    
+  </body>
+</html>

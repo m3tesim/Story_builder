@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="static/cs/styles.css" />
+    <script src="/static/js/newUser.js" defer></script>
+
+    <title>Story Builder:Create New User</title>
+  </head>
+  <body>
+    <header>
+      <h1>Story builder App</h1>
+    </header>
+
+    <main class="container form-cantainer">
+      <h2 class="title">Create new User</h2>
+
+      <form
+        class="primary-form"
+        id="new-user-form"
+        action="/new-user "
+        method="POST"
+        novalidate
+      >
+        <div class="form-info">
+          <h3 class="title" for="name">User Name</h3>
+
+          <input
+            id="user-name-input"
+            class="text-input"
+            type="text"
+            placeholder="User Name"
+            name="name"
+            required
+          />
+          <h4 class="title">Choose a Color!</h4>
+
+          <div class="form-colors">$$chooseColors$$</div>
+        </div>
+        <p class="validation">please enter a user name and Choose user color</p>
+
+        <div class="form-buttons">
+          <input
+            id="login-btn"
+            class="btn primary-btn"
+            type="submit"
+            value="Create User"
+          />
+          <a class="secondary-btn" onclick="authorised()" href="/">cancle</a>
+        </div>
+      </form>
+    </main>
+    
+  </body>
+</html>

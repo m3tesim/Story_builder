@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/js/dashboard.js" defer></script>
+    <script src="static/js/index.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="static/cs/styles.css" />
+
+    <title>Story Builder:Create New User</title>
+  </head>
+  <body>
+    <header>
+      <h1>Story builder</h1>
+      <h2>An Online story builder Game</h2>
+
+      <p class="sub-links">
+        <a href="how-it-works">how it works?!</a>
+      </p>
+      <div class="header-bottom">
+        <p>welcome: <span id="current-user">user</span> :)</p>
+
+        <p><a id="log-out" href="/">Logout &#10162;</a></p>
+      </div>
+    </header>
+
+    <div class="story-bar">
+      <h2 id="story-title">""Story headline""</h2>
+
+      <select id="stories">
+        <option value="default" selected>Select story</option>
+        $$SelectOption$$
+      </select>
+
+      <div class="primary-link">
+        <a href="/new-story">Create new story</a>
+      </div>
+    </div>
+    <main>
+      <h3>''Once upon a time''</h3>
+      <div class="container comment-container">
+        <div class="comments">$$comments$$</div>
+        <div>
+          <a href="#"> </a>
+          <form id="comment-form" action="/dashboard" method="post">
+            <input
+              type="hidden"
+              id="comment-user-name"
+              name="comment-user-name"
+              value="user-name"
+            />
+            <input
+              type="hidden"
+              id="comment-user-color"
+              name="comment-user-color"
+              value="user-color"
+            />
+            <input
+              type="text"
+              id="comment-input"
+              class="comment-input text-input"
+              name="comment"
+              placeholder=" Write new Line,,,, be creative"
+              required
+            />
+            <input
+              type="submit"
+              name="comment"
+              id="submit-comment"
+              class="comment-btn primary-btn"
+              value="Write"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

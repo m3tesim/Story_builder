@@ -1,0 +1,3 @@
+
+{"name": "JsonDimps", "color": "#EF895D", "comment": "He used to run code withouth any erros", "date": "14/03   09:26"}
+{"name": "Hossum", "color": "#ED4B9E", "comment": "untill he decided to learn javascript", "date": "14/03   11:10"}
